@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="theme-color" content="#f4f5f1">
+	<title>Inspira — пространство для идей</title>
+	<link rel="stylesheet" href="style.css">
+</head>
+<body>
+	<header class="topbar">
+		<a class="brand" href="#home" data-view-link="home" aria-label="Inspira, главная">
+			<span class="brand-mark"><i></i><i></i><i></i><i></i></span>
+			<span>Inspira</span>
+		</a>
+		<nav class="main-nav" aria-label="Главная навигация">
+			<button class="nav-link is-active" data-view-link="home">Главная</button>
+			<button class="nav-link" data-view-link="community">Идеи</button>
+			<button class="nav-link" data-view-link="projects">Мои проекты</button>
+			<button class="nav-link" data-action="new-board">Создать</button>
+			<button class="nav-link" data-view-link="categories">Категории</button>
+			<button class="nav-link" data-action="idea-open">AI-помощник</button>
+			<button class="nav-link" data-view-link="about">О нас</button>
+		</nav>
+		<div class="topbar-actions">
+			<button class="icon-button theme-toggle" data-action="theme" aria-label="Переключить тему" title="Переключить тему"><span>◐</span></button>
+			<button class="avatar-button" data-action="profile" aria-label="Регистрация" title="Профиль"><span id="profileInitial">М</span><img id="profileAvatarImage" alt="Фото профиля" hidden></button>
+		</div>
+	</header>
+
+	<main>
+		<section class="view home-view is-visible" id="homeView" aria-label="Главная">
+			<div class="hero-wrap">
+				<div class="hero-copy">
+					<div class="eyebrow"><span class="eyebrow-dot"></span> ВАША СТУДИЯ ВИЗУАЛЬНЫХ ИДЕЙ</div>
+					<h1>Собери настроение<br>в <em>целую историю.</em></h1>
+					<p class="hero-subtitle">Создавай. Вдохновляй. Дизайни.</p>
+					<div class="hero-actions">
+						<button class="button button-primary" data-action="new-board">Создать мудборд <span>↗</span></button>
+						<button class="button button-quiet" data-view-link="projects">Мои проекты <span>→</span></button>
+					</div>
+					<div class="hero-note"><span class="note-avatars"><b>А</b><b>К</b><b>М</b></span><span>Идеи, которым есть место</span></div>
+				</div>
+				<div class="hero-art" aria-label="Пример мудборда: интерьер в природных оттенках">
+					<div class="art-tape"></div>
+					<div class="art-photo art-photo-large"><img src="https://images.unsplash.com/photo-1616486338812-3dadae4b4ace?auto=format&fit=crop&w=1000&q=85" alt="Светлый интерьер с натуральными материалами"></div>
+					<div class="art-photo art-photo-small"><img src="https://images.unsplash.com/photo-1600210492486-724fe5c67fb0?auto=format&fit=crop&w=600&q=85" alt="Уютная гостиная"></div>
+					<div class="art-note"><span>quiet mornings</span><small>CONCEPT / 01</small></div>
+					<div class="art-palette"><i style="--swatch:#d9c7ad"></i><i style="--swatch:#657568"></i><i style="--swatch:#f0e9dc"></i><i style="--swatch:#a75d43"></i></div>
+					<span class="art-caption">NATURAL<br>RHYTHM</span>
+					<span class="art-index">01 — 04</span>
+				</div>
+			</div>
+
+			<section class="category-section" id="categorySection">
+				<div class="section-heading"><div><span class="eyebrow">НАЧНИ С НАПРАВЛЕНИЯ</span><h2>Для любой идеи</h2></div><button class="text-link" data-view-link="categories">Все категории <span>↗</span></button></div>
+				<div class="category-grid">
+					<button class="category-tile category-interior" data-category="Интерьер"><img src="https://images.unsplash.com/photo-1616486338812-3dadae4b4ace?auto=format&amp;fit=crop&amp;w=500&amp;q=80" alt="Светлый интерьер с натуральными материалами" loading="lazy"><span class="category-number">01</span><span class="category-name">Интерьер</span><span class="category-arrow">↗</span></button>
+					<button class="category-tile category-fashion" data-category="Мода"><img src="https://images.unsplash.com/photo-1539109136881-3be0616acf4b?auto=format&amp;fit=crop&amp;w=500&amp;q=80" alt="Современный образ в одежде" loading="lazy"><span class="category-number">02</span><span class="category-name">Мода</span><span class="category-arrow">↗</span></button>
+					<button class="category-tile category-graphic" data-category="Графический дизайн"><img src="https://images.unsplash.com/photo-1544816155-12df9643f363?auto=format&amp;fit=crop&amp;w=500&amp;q=80" alt="Печатные материалы и графический дизайн" loading="lazy"><span class="category-number">03</span><span class="category-name">Графический<br>дизайн</span><span class="category-arrow">↗</span></button>
+					<button class="category-tile category-ui" data-category="UI/UX"><img src="https://images.unsplash.com/photo-1559028012-481c04fa702d?auto=format&amp;fit=crop&amp;w=500&amp;q=80" alt="Макет интерфейса на экране" loading="lazy"><span class="category-number">04</span><span class="category-name">UI / UX</span><span class="category-arrow">↗</span></button>
+					<button class="category-tile category-brand" data-category="Брендинг"><img src="https://images.unsplash.com/photo-1557683316-973673baf926?auto=format&amp;fit=crop&amp;w=500&amp;q=80" alt="Цветовая композиция для брендинга" loading="lazy"><span class="category-number">05</span><span class="category-name">Брендинг</span><span class="category-arrow">↗</span></button>
+					<button class="category-tile category-photo" data-category="Фотография"><img src="https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?auto=format&amp;fit=crop&amp;w=500&amp;q=80" alt="Пейзаж для фотопроекта" loading="lazy"><span class="category-number">06</span><span class="category-name">Фотография</span><span class="category-arrow">↗</span></button>
+				</div>
+			</section>
+			<section class="idea-assistant-section" aria-labelledby="ideaAssistantTitle">
+				<div class="idea-assistant-copy"><span class="eyebrow">INSPIRA AI · ТВОРЧЕСКИЙ ДИАЛОГ</span><h2 id="ideaAssistantTitle">Хорошая идея начинается<br>с <em>правильного вопроса.</em></h2><p>Расскажи, что хочешь создать. Помощник уточнит стиль и настроение, а затем соберёт основу мудборда.</p><button class="button button-light" data-action="idea-open">Обсудить мою идею <span>↗</span></button><small>Ответы обрабатываются локально в этом браузере.</small></div>
+				<div class="idea-assistant-preview" aria-hidden="true"><div class="assistant-preview-top"><span class="assistant-spark">✳</span><span>ДИЗАЙН-ДИАЛОГ / 01</span></div><div class="assistant-question-preview">Какое настроение должен передавать проект?</div><div class="assistant-answer-preview"><span>Тихое и природное</span><span>Смелое и яркое</span></div><div class="assistant-preview-foot"><span class="assistant-live-dot"></span> ГОТОВ К НОВОЙ ИДЕЕ</div></div>
+			</section>
+			<section class="home-picks-section">
+				<div class="section-heading"><div><span class="eyebrow">ПОДБОРКА INSPIRA</span><h2>Идеи от дизайнеров</h2></div><button class="text-link" data-view-link="community">Открыть ленту <span>↗</span></button></div>
+				<div class="home-picks-grid" id="homePicksGrid"></div>
+			</section>
+			<footer class="home-footer"><span>INSPIRA — YOUR CREATIVE SPACE</span><span>Дизайн-идеи, проекты и новые направления.</span><button data-view-link="about">О нас ↗</button></footer>
+		</section>
+
+		<section class="view categories-view" id="categoriesView" aria-label="Каталог категорий">
+			<div class="discovery-hero category-hero"><span class="eyebrow">ТВОЯ СЛЕДУЮЩАЯ ИДЕЯ</span><h1>Выбери направление.<br><em>Найди свой сюжет.</em></h1><p>Подборки референсов, концепции и готовые стартовые шаблоны для каждого направления.</p><div class="discovery-search"><span>⌕</span><input id="categorySearch" type="search" placeholder="Например, журнальная обложка или спальня" aria-label="Поиск идей по категориям"></div></div>
+			<div class="category-explorer-grid" id="categoryExplorerGrid"></div>
+			<div class="catalog-section"><div class="section-heading"><div><span class="eyebrow">БОЛЬШАЯ БИБЛИОТЕКА</span><h2 id="categoryCatalogTitle">Шаблоны и концепции</h2></div><span class="result-count" id="categoryResultCount"></span></div><div class="idea-card-grid" id="ideaCatalogGrid"></div><div class="catalog-empty" id="catalogEmpty" hidden>По такому запросу идей пока нет. Попробуй другое название.</div></div>
+			<p class="demo-disclaimer">Библиотека — демонстрационная подборка Inspira. Созданные из шаблонов проекты хранятся только у тебя.</p>
+		</section>
+
+		<section class="view community-view" id="communityView" aria-label="Лента дизайнерских идей">
+			<div class="community-header"><div><span class="eyebrow">ВИЗУАЛЬНЫЙ ПОИСК ДЛЯ ДИЗАЙНЕРОВ</span><h1>Лента <em>вдохновения.</em></h1><p>Собирай идеи для интерьера, моды, брендинга и цифровых продуктов.</p></div><button class="button button-primary" data-action="idea-open">Спросить AI <span>✦</span></button></div>
+			<div class="community-searchbar"><span>⌕</span><input id="communitySearch" type="search" placeholder="Ищи по идеям, стилю или цвету" aria-label="Поиск в ленте вдохновения"><button id="clearCommunitySearch" aria-label="Очистить поиск">×</button></div>
+			<div class="discovery-filters" id="communityFilters"></div>
+			<div class="community-result-line"><span id="communityResultCount"></span><span>Только дизайн · Только вдохновение</span></div>
+			<div class="idea-card-grid community-grid" id="communityGrid"></div>
+			<div class="empty-state discovery-empty" id="communityEmpty" hidden><h2>Поиск пока ничего не нашёл</h2><p>Попробуй изменить запрос или выбрать другую категорию.</p></div>
+			<p class="demo-disclaimer">Здесь показана локальная демо-коллекция Inspira. Публикация реальных проектов других дизайнеров потребует общего сервера.</p>
+		</section>
+
+		<section class="view projects-view" id="projectsView" aria-label="Мои проекты">
+			<div class="page-heading"><div><span class="eyebrow">ВАША КОЛЛЕКЦИЯ</span><h1>Мои проекты<span class="project-count" id="projectCount">0</span></h1><p>Все идеи в одном месте. Открывай, продолжай, сохраняй.</p></div><button class="button button-primary" data-action="new-board">＋ Новый мудборд</button></div>
+			<div class="project-controls">
+				<label class="search-box"><span>⌕</span><input id="projectSearch" type="search" placeholder="Поиск проектов" aria-label="Поиск проектов"></label>
+				<div class="filter-wrap"><label for="categoryFilter">Категория</label><select id="categoryFilter"><option value="Все категории">Все категории</option><option>Интерьер</option><option>Мода</option><option>Графический дизайн</option><option>UI/UX</option><option>Брендинг</option><option>Фотография</option><option>Другое</option></select></div>
+				<button class="filter-favorites" id="favoritesFilter" aria-pressed="false">☆ Избранное</button>
+			</div>
+			<div class="projects-grid" id="projectsGrid"></div>
+			<div class="empty-state" id="emptyProjects" hidden><span class="empty-mark">＋</span><h2>Пока здесь тихо</h2><p>Создай первый мудборд и собери в нём свою идею.</p><button class="button button-primary" data-action="new-board">Создать мудборд</button></div>
+		</section>
+
+		<section class="view editor-view" id="editorView" aria-label="Редактор мудборда">
+			<div class="editor-topline">
+				<button class="back-button" data-view-link="projects" aria-label="Назад к проектам">←</button>
+				<div class="editor-title-wrap"><input id="boardTitle" class="board-title" value="Без названия" aria-label="Название проекта"><span class="save-status" id="saveStatus">Сохранено локально</span></div>
+				<div class="editor-actions"><button class="button button-outline" data-action="clear-board">Очистить доску</button><button class="button button-outline" data-action="save-project">Сохранить</button><button class="button button-primary" data-action="download">Скачать PNG <span>↓</span></button></div>
+			</div>
+			<div class="editor-layout">
+				<aside class="tool-panel" aria-label="Инструменты">
+					<span class="panel-label">ИНСТРУМЕНТЫ</span>
+					<button class="tool-button" data-tool="image"><span class="tool-icon">▧</span><span>Изображение</span><kbd>⌘ I</kbd></button>
+					<button class="tool-button" data-tool="text"><span class="tool-icon text-icon">T</span><span>Добавить текст</span></button>
+					<button class="tool-button" data-tool="color"><span class="tool-icon color-icon">◉</span><span>Палитра</span></button>
+					<button class="tool-button" data-tool="font"><span class="tool-icon text-icon">Aa</span><span>Шрифты</span></button>
+					<button class="tool-button" data-tool="shape"><span class="tool-icon">◇</span><span>Фигуры</span></button>
+					<div class="tool-divider"></div>
+					<button class="tool-button" data-tool="delete"><span class="tool-icon">⌫</span><span>Удалить</span><kbd>Del</kbd></button>
+					<button class="tool-button" data-tool="undo"><span class="tool-icon">↶</span><span>Отменить</span><kbd>⌘ Z</kbd></button>
+					<button class="tool-button" data-tool="redo"><span class="tool-icon">↷</span><span>Повторить</span><kbd>⌘ ⇧ Z</kbd></button>
+					<div class="tool-panel-bottom"><span class="online-dot"></span> Сохранение включено</div>
+				</aside>
+				<section class="board-stage" aria-label="Рабочее поле">
+					<div class="board-toolbar"><span id="boardDimensions">Холст · 1200 × 800</span><div><button id="zoomOut" aria-label="Уменьшить масштаб">−</button><span id="zoomLabel">100%</span><button id="zoomIn" aria-label="Увеличить масштаб">＋</button></div></div>
+					<div class="board-viewport" id="boardViewport"><div class="board-canvas" id="boardCanvas" tabindex="0" aria-label="Холст мудборда"></div></div>
+					<div class="board-hint"><span>ПЕРЕТАСКИВАЙ ЭЛЕМЕНТЫ</span><span>1200 × 800 PX</span></div>
+				</section>
+				<aside class="properties-panel" aria-label="Свойства и палитра">
+					<div class="inspector-tabs"><button class="inspector-tab is-active" data-inspector="properties">Свойства</button><button class="inspector-tab" data-inspector="palette">Палитра <span id="paletteCount">0</span></button></div>
+					<div class="inspector-content" id="propertiesContent">
+						<div class="inspector-empty" id="inspectorEmpty"><div class="inspector-empty-icon">⌖</div><b>Выбери элемент</b><span>Здесь появятся его настройки</span></div>
+						<div id="propertyFields" hidden>
+							<div class="selected-label"><span class="selected-dot"></span><span id="selectedType">ЭЛЕМЕНТ</span></div>
+							<div class="property-group"><label>Размер</label><div class="field-row"><label class="input-unit"><input type="number" id="propWidth" min="20" max="1200"><span>Ш</span></label><label class="input-unit"><input type="number" id="propHeight" min="20" max="800"><span>В</span></label></div></div>
+							<div class="property-group"><label>Позиция</label><div class="field-row"><label class="input-unit"><input type="number" id="propX"><span>X</span></label><label class="input-unit"><input type="number" id="propY"><span>Y</span></label></div></div>
+							<div class="property-group"><label for="propRotation">Поворот <span id="rotationValue">0°</span></label><input class="range-input" id="propRotation" type="range" min="-180" max="180" value="0"></div>
+							<div class="property-group" id="colorProperty"><label for="propColor">Цвет</label><div class="color-field"><input id="propColor" type="color" value="#d6a27c"><input id="propColorHex" type="text" value="#D6A27C" maxlength="7" aria-label="HEX цвета"></div></div>
+							<div class="property-group"><label for="propOpacity">Прозрачность <span id="opacityValue">100%</span></label><input class="range-input" id="propOpacity" type="range" min="10" max="100" value="100"></div>
+							<div class="property-group text-property" id="textProperties" hidden><label for="propFont">Шрифт</label><select id="propFont"><option value="Georgia, serif">Georgia</option><option value="Arial, sans-serif">Arial</option><option value="'Trebuchet MS', sans-serif">Trebuchet</option><option value="'Courier New', monospace">Courier New</option></select><label class="sub-label" for="propFontSize">Размер текста</label><div class="field-row"><label class="input-unit full-unit"><input type="number" id="propFontSize" min="8" max="120"><span>px</span></label></div><div class="align-control" aria-label="Выравнивание текста"><button data-align="left" aria-label="По левому краю">≡</button><button data-align="center" aria-label="По центру">☰</button><button data-align="right" aria-label="По правому краю">≡</button></div></div>
+							<div class="property-group layer-controls"><label>Слои</label><div class="field-row"><button data-layer="front">На передний план ↑</button><button data-layer="back">На задний план ↓</button></div></div>
+						</div>
+					</div>
+					<div class="palette-content" id="paletteContent" hidden>
+						<div class="palette-heading"><div><b>Цвета проекта</b><span>Собери своё настроение</span></div><button class="icon-button small-icon" data-action="generate-palette" title="Сгенерировать палитру" aria-label="Сгенерировать палитру">✦</button></div>
+						<div class="palette-list" id="paletteList"></div>
+						<div class="add-color-row"><input type="color" id="newPaletteColor" value="#91a38d" aria-label="Выбрать цвет"><button data-action="add-color">＋ Добавить цвет</button></div>
+						<button class="generate-button" data-action="generate-palette">✦ Сгенерировать палитру</button>
+					</div>
+				</aside>
+			</div>
+			<input id="imageInput" type="file" accept="image/*" hidden>
+		</section>
+
+		<section class="view info-view" id="infoView" aria-label="О нас">
+			<div class="about-intro"><span class="eyebrow">НЕ ПРОСТО ДОСКА. ЦЕЛЫЙ МИР ИДЕЙ.</span><h1>Привет, мы<br><em>Inspira.</em></h1><p>Пространство, где первые мысли становятся визуальными историями. Для тех, кто замечает цвет, чувствует форму и собирает новое из маленьких деталей.</p><button class="button button-light" data-action="idea-open">Начать с идеи <span>↗</span></button></div>
+			<div class="about-mosaic" aria-label="Дизайн-коллаж Inspira"><img src="https://images.unsplash.com/photo-1616486338812-3dadae4b4ace?auto=format&amp;fit=crop&amp;w=750&amp;q=85" alt="Природные оттенки в интерьере" loading="lazy"><div class="about-mosaic-note"><span>MAKE ROOM<br>FOR IDEAS</span><i>INSPIRA / STUDIO</i></div><img src="https://images.unsplash.com/photo-1539109136881-3be0616acf4b?auto=format&amp;fit=crop&amp;w=450&amp;q=85" alt="Модная редакционная съёмка" loading="lazy"></div>
+			<div class="about-principles"><div><span>01</span><h2>Смотри шире</h2><p>Дизайнерские подборки помогают найти неожиданные сочетания и новые точки старта.</p></div><div><span>02</span><h2>Собирай своё</h2><p>Меняй шаблоны, добавляй фотографии, записывай мысли и строй композицию свободно.</p></div><div><span>03</span><h2>Храни рядом</h2><p>Личные проекты остаются в твоём браузере и доступны после перезагрузки.</p></div></div>
+			<div class="about-bottom"><span>INSPIRA / CREATIVE SPACE</span><button data-view-link="community">Посмотреть идеи дизайнеров ↗</button><span>Локальное приложение · без аккаунта и сервера</span></div>
+		</section>
+	</main>
+
+	<div class="modal-backdrop" id="projectModal" hidden>
+		<form class="project-modal" id="projectForm">
+			<button class="modal-close" type="button" data-action="close-modal" aria-label="Закрыть">×</button>
+			<span class="eyebrow">НОВАЯ ИДЕЯ</span><h2>Создать мудборд</h2><p>Дай проекту имя и выбери направление.</p>
+			<label class="form-label" for="newProjectName">Название проекта</label><input class="modal-input" id="newProjectName" maxlength="60" placeholder="Например, Тихое утро" required>
+			<label class="form-label" for="newProjectCategory">Категория</label><select class="modal-input" id="newProjectCategory"><option>Интерьер</option><option>Мода</option><option>Графический дизайн</option><option>UI/UX</option><option>Брендинг</option><option>Фотография</option><option>Другое</option></select>
+			<button class="button button-primary modal-submit" type="submit">Создать проект <span>↗</span></button>
+		</form>
+	</div>
+
+	<div class="modal-backdrop" id="profileModal" hidden>
+		<form class="project-modal profile-modal" id="profileForm">
+			<button class="modal-close" type="button" data-action="close-profile" aria-label="Закрыть">×</button>
+			<span class="eyebrow">ТВОЁ ТВОРЧЕСКОЕ ПРОСТРАНСТВО</span><h2 id="profileHeading">Регистрация</h2><p>Создай локальный профиль, чтобы добавить имя и фото в Inspira.</p>
+			<div class="profile-photo-picker"><div class="profile-photo-preview"><span id="profilePhotoInitial">М</span><img id="profilePhotoPreview" alt="Предпросмотр фото профиля" hidden></div><div><label class="form-label" for="profilePhoto">Фото профиля</label><label class="photo-upload-button" for="profilePhoto">＋ Загрузить фото</label><input id="profilePhoto" type="file" accept="image/*" hidden><span class="photo-hint">Квадратный кадр, хранится в этом браузере</span></div></div>
+			<label class="form-label" for="profileName">Имя</label><input class="modal-input" id="profileName" maxlength="50" placeholder="Как к тебе обращаться" autocomplete="name" required>
+			<label class="form-label" for="profileEmail">Email</label><input class="modal-input" id="profileEmail" type="email" maxlength="120" placeholder="name@example.com" autocomplete="email" required>
+			<p class="profile-local-note">Это локальный профиль, не онлайн-аккаунт. Данные не покидают этот браузер.</p>
+			<button class="button button-primary modal-submit" id="profileSubmit" type="submit">Создать профиль <span>↗</span></button>
+		</form>
+	</div>
+
+	<div class="modal-backdrop" id="ideaModal" hidden>
+		<section class="idea-modal" role="dialog" aria-modal="true" aria-labelledby="ideaModalTitle">
+			<button class="modal-close" type="button" data-action="idea-close" aria-label="Закрыть">×</button>
+			<div class="idea-modal-heading"><span class="assistant-spark">✳</span><div><span class="eyebrow">INSPIRA AI · НОВЫЙ ДИАЛОГ</span><h2 id="ideaModalTitle">Расскажи о своей идее</h2><p>Несколько вопросов помогут собрать направление для мудборда.</p></div></div>
+			<div class="idea-chat" id="ideaChat">
+				<div class="idea-chat-transcript" id="ideaChatTranscript" role="log" aria-live="polite" aria-relevant="additions">
+					<div class="chat-message assistant-message"><span class="chat-avatar">✳</span><p>Привет! Я помогу превратить задумку в визуальную концепцию. Расскажи, что хочешь создать: интерьер, коллекцию одежды, бренд или цифровой продукт?</p></div>
+				</div>
+				<div class="idea-chat-suggestions" id="ideaChatSuggestions"><button type="button" data-chat-prompt="Хочу придумать интерьер для небольшого кафе">Интерьер кафе</button><button type="button" data-chat-prompt="Хочу создать яркую коллекцию одежды">Коллекция одежды</button><button type="button" data-chat-prompt="Нужен образ для нового бренда">Новый бренд</button><button type="button" data-chat-prompt="Придумай идею для мобильного приложения">Мобильное приложение</button></div>
+				<form class="idea-chat-composer" id="ideaChatForm"><label class="visually-hidden" for="ideaChatInput">Опиши свою дизайн-идею</label><textarea id="ideaChatInput" rows="2" maxlength="500" placeholder="Опиши идею своими словами…" required></textarea><button type="submit" aria-label="Отправить сообщение" title="Отправить">↑</button></form>
+				<div class="idea-chat-footer"><span>Локальный режим · сообщения не отправляются в интернет</span><button type="button" data-action="idea-use-quiz">Открыть вопросы</button></div>
+			</div>
+			<form id="ideaForm" hidden>
+				<div class="idea-question-grid">
+					<div class="idea-question"><label for="ideaCategory">Что будем проектировать?</label><select class="modal-input" id="ideaCategory"><option>Интерьер</option><option>Мода</option><option>Графический дизайн</option><option>UI/UX</option><option>Брендинг</option><option>Фотография</option><option>Другое</option></select></div>
+					<div class="idea-question"><label for="ideaSubject">Как называется идея?</label><input class="modal-input" id="ideaSubject" maxlength="70" placeholder="Например, кофейня у парка" required></div>
+					<div class="idea-question"><label for="ideaMood">Какое настроение нужно передать?</label><select class="modal-input" id="ideaMood"><option value="Спокойное и природное">Спокойное и природное</option><option value="Смелое и энергичное">Смелое и энергичное</option><option value="Тёплое и уютное">Тёплое и уютное</option><option value="Чистое и технологичное">Чистое и технологичное</option></select></div>
+					<div class="idea-question"><label for="ideaStyle">Какой стиль тебе ближе?</label><select class="modal-input" id="ideaStyle"><option value="Современный минимализм">Современный минимализм</option><option value="Природная органика">Природная органика</option><option value="Редакционная классика">Редакционная классика</option><option value="Яркий эксперимент">Яркий эксперимент</option><option value="Мягкий ретро">Мягкий ретро</option></select></div>
+					<div class="idea-question idea-question-wide"><label for="ideaAudience">Для кого или какого пространства? <span>необязательно</span></label><input class="modal-input" id="ideaAudience" maxlength="100" placeholder="Например, для тех, кто любит неспешные утра"></div>
+				</div>
+				<button class="button button-primary idea-submit" type="submit">Собрать концепцию <span>✦</span></button>
+			</form>
+			<div id="ideaResult" hidden><span class="eyebrow">ТВОЯ СТАРТОВАЯ КОНЦЕПЦИЯ</span><h3 id="ideaResultTitle"></h3><p id="ideaResultDescription"></p><div class="idea-result-palette" id="ideaResultPalette"></div><div class="idea-result-actions"><button class="button button-quiet" type="button" data-action="idea-back">Изменить ответы</button><button class="button button-primary" type="button" data-action="idea-create">Создать мудборд <span>↗</span></button></div></div>
+		</section>
+	</div>
+
+	<div class="modal-backdrop" id="categoryIdeasModal" hidden>
+		<section class="category-ideas-dialog" role="dialog" aria-modal="true" aria-labelledby="categoryIdeasTitle">
+			<button class="modal-close" type="button" data-action="close-category-ideas" aria-label="Закрыть">×</button>
+			<div class="category-ideas-heading"><div><span class="eyebrow">БИБЛИОТЕКА INSPIRA · <span id="categoryIdeaEyebrow">КАТЕГОРИЯ</span></span><h2 id="categoryIdeasTitle"></h2><p id="categoryIdeasDescription"></p></div><span class="category-ideas-count" id="categoryIdeasCount"></span></div>
+			<div class="idea-card-grid category-ideas-grid" id="categoryIdeasGrid"></div>
+			<p class="demo-disclaimer">Шаблон создаёт новый проект в твоём браузере. Все тексты, формы и цвета можно менять в редакторе.</p>
+		</section>
+	</div>
+
+	<div class="toast" id="toast" role="status" aria-live="polite"></div>
+	<script src="script.js"></script>
+</body>
+</html>
